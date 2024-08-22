@@ -1,0 +1,167 @@
+body{
+    background-image: linear-gradient(
+        23deg,
+        hsl(49deg 100% 69%) 0%,
+        hsl(16deg 80% 61%) 2%,
+        hsl(330deg 81% 24%) 12%,
+        hsl(259deg 100% 15%) 50%,
+        hsl(212deg 100% 25%) 88%,
+        hsl(197deg 100% 30%) 98%,
+        hsl(183deg 79% 36%) 100%
+    );
+    height: 100vh;
+}
+.button{
+    border: none;
+    padding:0.625em;
+    border-radius: 0.5em;
+    cursor: pointer;
+
+}
+.button:hover{
+    filter: brightness(0.9);
+
+}
+
+.button:active{
+    transform: translateY(2px);
+}
+.person-selector{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 3em auto 1em;
+    max-width: 40em;
+
+}
+.person-selector-button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 1.1em;
+
+}
+
+.active-person{
+    background: rgb(21, 14, 102);
+    box-shadow: 0 0 0.5em 0.1em #c3c3c333;
+}
+
+.chat-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: black;
+    font-family: sans-serif;
+    border-radius: 0.5em;
+    padding: 0.5em 1.25em ;
+    margin:auto;
+    max-width: 37.5em;
+    height: 37.5em;
+    box-shadow: 0 0 1.25em 0.5em #c3c3c333;
+    
+
+    
+
+}
+
+
+
+.chat-header{
+    margin-bottom: 1em;
+    color: white;
+}
+.chat-header h2{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.chat-messages{
+    flex: 1;
+    overflow-y: auto;
+}
+.chat-messages::-webkit-scrollbar{
+    display: none;
+
+}
+.message    {
+    padding: 0.625em;
+    border-radius: 1em;
+    margin-bottom: 0.625em;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+.message-sender{
+    font-weight: bold;
+    margin-bottom: 0.31em;
+
+}
+.message-text{
+    font-size: 1em;
+    margin-bottom: 0.31em;
+    word-wrap: break-word;
+}
+
+.message-timestamp{
+    font-size: 0.75em;
+    text-align: right;
+}
+
+.clear-chat-button {
+    position: relative;
+    top: 18em; /* Increase this value to move the button further down */
+    align-self: flex-start;
+    background: white;
+    border: none;
+    padding: 10px;
+    border-radius: 0.5em;
+    cursor: pointer;
+    width: 30%;
+}
+
+
+.clear-chat-button:hover {
+    filter: brightness(0.9);
+}
+
+.clear-chat-button:active {
+    transform: translateY(2px);
+}
+.blue-bg{
+    background-color: blue;
+    
+}
+.grey-bg{
+    background-color: grey;
+    height: 65px; 
+}
+.chat-input-form {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 1.5em; /* Adjust the spacing from the bottom */
+    left: 0;
+    width: 100%;
+    padding: 0 1em; /* Add some padding on the sides */
+    background-color: #000; /* Optional: to match the chat container background */
+}
+
+input[type="text"] {
+    position: relative; /* Position it relative to its current position */
+    top: 240px; /* Move it down by 50px */
+    width: 500px;
+    border-radius: 2px;
+    height: 23px;
+}
+
+button[type="submit"] {
+    position: relative;
+    top: 240px; /* Move the button down by 50px as well */
+    background-color: blue;
+    height: 31px;
+    font-weight: bold;
+    color: white;
+}
+
